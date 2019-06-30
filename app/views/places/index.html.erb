@@ -4,7 +4,6 @@
     <i><%= place.address %></i><br /><br />
     <p><%= place.description %></p><br />
 
-     
 
     <% if place.user.present? %>
       <small><%= place.user.email %></small>
@@ -12,7 +11,6 @@
 
    <br />
    <br>
-  
     <% place.photos.each do |photo| %>
      
           <%= image_tag photo.picture.url, size: "100x150" %>
