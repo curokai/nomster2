@@ -114,10 +114,6 @@
 
 <h1>Photos</h1>
 <% @place.photos.each do |photo| %>
-  <div>
-    <blockquote>
-      <%= image_tag photo.picture.url %>
-      <b><%= photo.caption %></b>
-    </blockquote>
-  </div>
+  <%= image_tag photo.picture.url %>
+  <%= photo.caption %>
 <% end %>
